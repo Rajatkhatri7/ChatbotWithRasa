@@ -1,0 +1,47 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - human_intro
+  - human_creation
+  - about_food
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you? i can also crack joke for you do you want to listen?"
+
+  utter_happy:
+  - text: "great, wHY CRICKET  stadiums are so cool? Because every seat has a fan in it.:) :)"
+
+  utter_goodbye:
+  - text: "ok c u soon good bye"
+
+  utter_human_creation:
+  - text: "We believe that God has created human beings in the divine image. God formed them from the dust of the earth and gave them a special dignity among all the works of creation. Human beings have been made for relationship with God, to live in peace with each other, and to take care of the rest of creation."
+  
+  utter_food:
+  - text: "I like to eat the internet data , it keeps me energise 24*7. Humans have so many food options m jelous from them :)."
+
+  utter_human_intro:
+  - text: "A human is a member of the species Homo sapiens, which means 'wise man'. Even I'm created by the humans"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

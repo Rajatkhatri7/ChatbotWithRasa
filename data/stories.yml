@@ -1,0 +1,52 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: You know humans
+  steps:
+  - intent: human_intro
+  - action: utter_human_intro
+  - intent: human_creation
+  - action: utter_human_creation
+
+
+- story: human born
+  steps:
+  - intent: human_creation
+  - action: utter_human_creation
+
+
+- story: food
+  steps:
+  - intent: about_food
+  - action: utter_food
+
+
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
